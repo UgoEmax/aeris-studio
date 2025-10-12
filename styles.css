@@ -815,8 +815,8 @@ header img {
  }
 
  .cta-form {
-    right: 35px;
-    /* left: 20px; */
+    right: 20px;
+    left: 20px;
 }
 
 .form-button{
