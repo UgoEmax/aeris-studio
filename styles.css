@@ -84,7 +84,7 @@ header img {
 
 /* Hero Section */
 .hero-section {
-    background: url(/Assets/Build_in_Open.jpg);
+    background: url(/Assets/high-background.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -845,11 +845,7 @@ header img {
 
 
 @media(max-width:1024px) {
-    html {
-        /* overflow: hidden; */
-    };
-
-     .grid-4 {
+  .grid-4 {
     grid-column: span 2;
     grid-row: span 1;
     text-align: right;
