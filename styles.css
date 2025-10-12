@@ -844,7 +844,7 @@ header img {
 }
 
 
-@media(max-width:1024px) {
+/* @media(max-width:1024px) {
   .grid-4 {
     grid-column: span 2;
     grid-row: span 1;
@@ -892,4 +892,4 @@ header img {
   }
 
     
-}
+} */
