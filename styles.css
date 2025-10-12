@@ -845,7 +845,51 @@ header img {
 
 
 @media(max-width:1024px) {
-    .hero-section {
-        margin-top: 200px;
+  .grid-4 {
+    grid-column: span 2;
+    grid-row: span 1;
+    text-align: right;
+ }
+
+ .grid-4-img {
+    transform: translatey(0%);
+ }
+
+ .grid-4-txt {
+    transform: translatey(-20%);
+ }
+
+
+.nav-link1, .end-nav {
+        display: none;
     }
+
+    .menu-open {
+        display: flex;
+        font-size: 70px;
+    }
+
+ .Highlight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translate(0);
+ }
+
+ .how-content {
+        flex-direction: column;
+        gap: 40px;
+    
+ }
+
+ .star-flex::after {
+    content: "";
+    margin: 0 -50px;
+ }
+
+  .cta-form {
+    left: 50px;
+  }
+
+    
 }
