@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <header class="image">
         <a href="#">
             <img src="/Assets/Practice_Logo.png" alt="Logo">
         </a>
@@ -51,6 +51,7 @@
     <main>
         <!-- hero section -->
          <section class="hero-section">
+             <div class="mob-space">
             <h1 class="container">Introducing Aeris Studio</h1>
             <h2 class="spanner container">Design excellence, delivered on demand.</h2>
             <div class="hero-para container content-blur">
@@ -60,12 +61,13 @@
             <div>
                 <form class="hero-form container">
                     <input type="email" placeholder="you@company.com" required>
-                    <button type="submit">Notify me</button>
+                    <button type="submit" class="notify">Notify me</button>
                 </form>
             </div>
 
             <div class="no-spam-p container content-blur">
                 <p>No spam. Cancel anytime.</p>
+            </div>
             </div>
          </section>
 
@@ -267,7 +269,7 @@
                             <form action="">
                                 <input type="email" placeholder="you@company.com" required class="email-input">
                                 <button type="submit" class="form-button">Get early access</button>
-                                <div>
+                                <div class="mobile-check">
                                     <input type="checkbox" required ><span class="content-blur checkbox">By signing up, you agree to our [Terms] and [Privacy]. </span>
                                 </div>
                             </form>
