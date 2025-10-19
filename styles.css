@@ -651,9 +651,6 @@ header img {
 
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
-    html {
-       overflow:-moz-hidden-unscrollable;
-    }
 
     .mob-space {
         margin-top: 50px;
@@ -672,7 +669,8 @@ header img {
 
     .menu-open {
         display: flex;
-        margin-right: 30px;
+        max-width: 300px;
+        margin-right: 10px;
     }
 
     .menu-open:hover {
