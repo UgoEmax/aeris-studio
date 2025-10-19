@@ -615,7 +615,6 @@ header img {
 /* Mobile Menu */
 .mobile-menu {
     display: none;
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -651,12 +650,12 @@ header img {
 
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
-    html {
+    * {
         overflow-x: hidden;
     }
 
     .bx-menu {
-        
+
     }
 
     .mob-space {
@@ -671,11 +670,12 @@ header img {
 
     
     .nav-link1, .end-nav {
-        display: none;
+        display: none;;
     }
 
     .menu-open {
         display: flex;
+        margin-right: 100px;
     }
 
     .menu-open:hover {
@@ -704,7 +704,7 @@ header img {
     }
 
     .notify {
-        left: 210px;
+        left: 220px;
     }
 
     .feat-heading p {
@@ -803,7 +803,7 @@ header img {
 
   .cta-form {
     transform: translate(-100px);
-    left: 70px;
+    left: 60px;
   }
 
   .mobile-check {
