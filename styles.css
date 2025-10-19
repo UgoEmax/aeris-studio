@@ -667,21 +667,20 @@ header img {
     .hero-section{
         width: 100%;
         height: auto;
+    }
 
-        h1 {
+    .hero-section h1 {
             font-size: 2.5rem;
             margin-top: 90px;
             line-height:50px;
         }
 
-        h2 {
+    .hero-section h2 {
             font-size: 2rem;
             line-height: 50px;
         }
-       
-        }
 
-         .grid-1, 
+        .grid-1, 
         .grid-2, 
         .grid-3, 
         .grid-4 {
@@ -695,36 +694,37 @@ header img {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        width: 100%;
+    }
         
-        h3, p {
+    .grid-4 h3, p {
             transform: translateY(90%);
             text-align: center;
             padding: 15px;
         }
 
-         h3 {
+    .grid-4 h3 {
             padding-top: 0px;
          }
 
-        img {
+    .grid-4 img {
             justify-self: center;
             transform: translatey(0%);
         }
-    }
 
     .grid-4-txt {
         text-align: center;
         gap: 20px;
+    }
 
-        h3 {
+    .grid-4-txt h3 {
             padding-top: 25px;
         }
 
-        p {
+    .grid-4-txt p {
            transform: translateY(40%);
            padding-bottom: 10px;
         }
-    }
 
     .feat-heading p {
         font-size: 1.2rem;
@@ -748,12 +748,12 @@ header img {
 
     .how-section {
         margin: 10px;
+    }
 
-        p {
+    .how-section p {
             font-size: 1.3rem;
             padding: 30px;
         }
-    }
 
     .how-it-works {
         width: 100%;
@@ -787,32 +787,27 @@ header img {
 
   .accordion-item {
     padding: 10px;
-
-    h3 {
+  }
+    .accordion-item h3 {
         font-size: 1rem;
     }
 
-    p {
+    .accordion-item p {
         display: none;
         line-height: 40px;
         line-height: 20px;
     
     }
- }
 
-  .cta-section {
-
-
-    h2 {
+  .cta-section h2 {
         font-size: 2rem;
         padding-bottom: 20px;
     }
 
-    p {
+  .cta-section p {
          padding-bottom: 30px;
          font-size: 1.2rem;
     }
- }
 
  .cta-form {
     right: 20px;
@@ -841,10 +836,10 @@ header img {
 .foot h3 {
         font-size: 1rem;
     }
+
 }
 
-
-@media(max-width:1024px) {
+/* @media(max-width:1024px) {
   .grid-4 {
     grid-column: span 2;
     grid-row: span 1;
@@ -892,4 +887,4 @@ header img {
   }
 
     
-}
+} */
