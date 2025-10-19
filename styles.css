@@ -652,7 +652,11 @@ header img {
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
     html {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
+    }
+
+    .bx-menu {
+        
     }
 
     .mob-space {
@@ -828,5 +832,5 @@ header img {
 /* Tablet Responsiveness */
 
 @media(max-width: 1024px) {
-    
+
 }
