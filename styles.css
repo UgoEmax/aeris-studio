@@ -651,7 +651,7 @@ header img {
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
     body {
-        overflow-x: hidden;
+       overflow: hidden;
     }
 
     .mob-space {
@@ -671,7 +671,7 @@ header img {
 
     .menu-open {
         display: flex;
-        margin-right: 25px;
+        margin-right: 30px;
     }
 
     .menu-open:hover {
