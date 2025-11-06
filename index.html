@@ -27,7 +27,7 @@
         </div>
 
         <!-- mobile menu -->
-         <div class="menu-open">
+         <div class="menu-open" id="menu-trigger">
             <i class='bx  bx-menu'  ></i> 
          </div>
 
@@ -35,15 +35,18 @@
             <i class='bx  bx-x'  ></i> 
          </div>
 
-         <div class="mobile-menu nav-link1">
+         <div class="mobile-menu nav-link1 container">
             <nav>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How it Works</a>
                 <a href="#testimonials">Testimonials</a>
                 <a href="#faqs">FAQs</a>
             </nav>
-            <a href="#">Join waitlist</a>
-            <a href="#">Sign in</a>
+
+            <div class="but-nav">
+                <a href="#">Join waitlist</a>
+                <a href="#">Sign in</a>
+            </div>
          </div>
     </header>
 
@@ -59,9 +62,10 @@
             </div>
 
             <div>
-                <form class="hero-form container">
-                    <input type="email" placeholder="you@company.com" required>
-                    <button type="submit" class="notify">Notify me</button>
+                <form action="https://formsubmit.co/el/liheco" method="POST" class="hero-form container" id="heroForm">
+                    <div id="errorMsg" class="error-message"></div>
+                    <input type="email" name="email" placeholder="you@company.com" id="formEmail">
+                    <button type="submit" class="notify" target="_blank">Notify me</button>
                 </form>
             </div>
 
@@ -266,11 +270,12 @@
                         <p class="content-blur">Get access to senior design power without the hiring maze.</p>
 
                         <div class="cta-form">
-                            <form action="">
-                                <input type="email" placeholder="you@company.com" required class="email-input">
-                                <button type="submit" class="form-button">Get early access</button>
+                            <form action="https://formsubmit.co/ugohemmy@gmail.com" method="POST" id="ctaForm">
+                                <div id="ctaErrorMsg" class="error-cta"></div>
+                                <input type="email" name="email" placeholder="you@company.com" id="ctaEmail" class="email-input">
+                                <button type="submit" class="form-button" target="blank">Get early access</button>
                                 <div class="mobile-check">
-                                    <input type="checkbox" required ><span class="content-blur checkbox">By signing up, you agree to our [Terms] and [Privacy]. </span>
+                                    <input type="checkbox" required><span class="content-blur checkbox">By signing up, you agree to our [Terms] and [Privacy]. </span>
                                 </div>
                             </form>
                         </div>
@@ -302,7 +307,7 @@
         </div>
         <p class="content-blur">&copy 2025 Aeris Studio. All rights reserved.</p>
     </footer>
-
     
+<script src="/app.js"></script>
 </body>
 </html>

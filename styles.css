@@ -15,7 +15,7 @@
 body {
     background-color: wheat;
     font-family: sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .content-blur {
@@ -140,9 +140,23 @@ header img {
     /* background-blend-mode: lighten; */
 }
 
+.error-message {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30;
+    top: -30px;
+}
+
+
 .hero-form button {
    position: absolute;
-    right: 138px;
+    right: 140px;
     top: 33px;
     transform: translateY(-50%);
     width: 140px;
@@ -535,6 +549,19 @@ header img {
     margin: 0 auto;
 }
 
+.error-cta {
+    color: red;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    transform: translateX(150%);
+}
+
 .email-input {
     padding: 25px 150px 25px 15px;
     border: 1px solid rgb(134, 113, 113);
@@ -619,26 +646,36 @@ header img {
     justify-content: center;
     border: none;
     gap: 24px;
-    background-color: rgb(141, 136, 129);
+    background-color: rgb(248, 234, 220);
     padding: 32px 24px;
     position: absolute;
     top: 80px;
-    right: 0;
-    width: 100%;
+    right: 10px;
+    width: 50%;
     border-radius: 24px;
 }
 
+.mobile-menu.active {
+    display: flex;
+}
+
 .mobile-menu nav {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 45px;
-        gap: 4px;
+        margin-bottom: 10px;
+        gap: 9px;
     }
 
 .mobile-menu a {
         font-size: 1.2rem;
+        color: rgb(126, 90, 24);
+    }
+
+    .mobile-menu a:hover {
+        color: black;
+        text-decoration: underline;
     }
 
 .menu-close, .menu-open {
@@ -648,12 +685,25 @@ header img {
     margin-left: 1px;
 }
 
+.but-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Mobile Responsiveness */
 @media(max-width: 768px) {
 
     .mob-space {
         margin-top: 50px;
         /* max-width: 400px; */
+    }
+
+    .mobile-menu {
+        display: none;
+         padding-left: 20px;
     }
 
     .image {
@@ -668,13 +718,14 @@ header img {
 
     .menu-open {
         display: flex;
-        /* max-width: 300px; */
         margin-right: 10px;
+        transition: all .5s ease-in-out;
     }
 
     .menu-open:hover {
         cursor: pointer;
         color: rgb(204, 165, 94);
+        transition: .3s ease-in-out;
     }
 
     .hero-section{
@@ -698,7 +749,7 @@ header img {
     }
 
     .notify {
-        left: 320px;
+        left: 210px;
     }
 
     .feat-heading p {
@@ -801,7 +852,7 @@ header img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: translate(-220px);
+    transform: translate(-350px);
     left: 180px;
   }
 
