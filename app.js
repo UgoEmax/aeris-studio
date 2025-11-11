@@ -25,18 +25,24 @@ const heroForm = document.getElementById('heroForm');
 heroForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formEmail = document.getElementById('formEmail').value;
+    let errorMsg = document.getElementById('errorMsg');
+    const formEmail = document.getElementById('formEmail').value.trim();
 
     if (formEmail === '') {
-      document.getElementById('errorMsg').textContent = "Email is required";
-    } else if (formEmail.includes('@') && formEmail.includes('.')) {
-      document.getElementById('errorMsg').textContent = "";
-      // Proceed with form submission
+      errorMsg.textContent = "Email is required";
+      return;
+    } 
 
-      heroForm.submit();
-    } else {
-      document.getElementById('errorMsg').textContent = "Please enter a valid email address.";
+    if (!formEmail.includes('@') && !formEmail.includes('.')) {
+      errorMsg.textContent = "Please enter a valid email address.";
+      return;
     }
+    
+    if (formEmail.includes('@') && formEmail.includes('.')) {
+      errorMsg.textContent = "";
+       heroForm.submit();
+    }
+       
 })
 
 const ctaForm = document.getElementById('ctaForm');
@@ -58,4 +64,32 @@ ctaForm.addEventListener('submit', (e) => {
       
 });
 
-console.log(ctaEmail);
+
+// Accordion
+const accordionItem = document.querySelectorAll('.accordion-item');
+
+accordionItem.forEach((item) => {
+    const accordionHeader = item.querySelector('.accordion-header');
+    const accordionContent = item.querySelector('.accordion-content'); 
+    const accordionIcon = item.querySelector('.accordion-icon');
+
+    accordionHeader.addEventListener('click', () => {
+        const isOpen = item.classList.contains('accordion-active');
+
+
+// Close all items
+accordionItem.forEach(i => {
+  i.classList.remove('accordion-active');
+  i.querySelector('.accordion-content').style.maxHeight = null;
+  i.querySelector('.accordion-icon').innerHTML = '<i class="bx bxs-plus"></i>';
+});
+
+// Open clicked item if it was closed
+if (!isOpen) {
+  item.classList.add('accordion-active');
+  accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+  accordionIcon.innerHTML = '<i class="bx bxs-minus"></i>';
+        }
+   });
+
+});

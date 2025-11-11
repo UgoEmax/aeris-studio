@@ -486,6 +486,7 @@ header img {
     }
 
  .accordion-wrapper {
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -493,7 +494,8 @@ header img {
  }
 
  .accordion-item {
-    padding: 0 100px;
+    padding: 5px 100px;
+    overflow: hidden;
  }
 
 .accordion-item h3 {
@@ -501,11 +503,17 @@ header img {
         font-weight: 700;
     }
 
-.accordion-item p {
-        display: none;
-        line-height: 40px;
-    
+.accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        padding: 0 20px;
     }
+
+.accordion-content p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
 
  .accordion-header {
     display: flex;
@@ -513,11 +521,18 @@ header img {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
  }
 
  .accordion-active {
-    padding: 24px;
+    padding: 20px 100px;
     background-color: rgb(247, 212, 157);
+    border-radius: 20px;
+ }
+
+ .accordion-icon {
+    cursor: pointer;
  }
 
  .cta-section {
@@ -749,7 +764,7 @@ header img {
     }
 
     .notify {
-        left: 260px;
+        left: 230px;
     }
 
     .feat-heading p {
@@ -836,6 +851,13 @@ header img {
 
   .accordion-header h3 {
     font-size: 1rem;
+    padding: 20px 10px 0 20px;
+  }
+
+  .accordion-content p {
+    margin: 10px 0;
+    line-height: 1.6;
+    padding-bottom: 10px;
   }
 
   .cta-section h2 {
@@ -844,6 +866,7 @@ header img {
 
   .cta-section p {
     font-size: 1.2rem;
+    max-width: 600px;
   }
 
   .cta-form {
