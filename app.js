@@ -61,7 +61,7 @@ ctaForm.addEventListener('submit', (e) => {
         ctaForm.submit();
    } else {
         document.querySelector('#ctaErrorMsg').textContent = "Please enter a valid email address.";
-        document.querySelector('.error-cta').style.left = "-280px";
+        document.querySelector('.error-cta').style.left = "-200px";
    }
       
 });

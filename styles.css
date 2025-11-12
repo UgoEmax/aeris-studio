@@ -575,7 +575,7 @@ header img {
     position: absolute;
     top: -30px;
     left: -280px;
-    transform: translateX(150%);
+    transform: translateX(180%);
 }
 
 .email-input {
