@@ -574,6 +574,7 @@ header img {
     align-items: center;
     position: absolute;
     top: -30px;
+    left: -280px;
     transform: translateX(150%);
 }
 
@@ -665,7 +666,7 @@ header img {
     padding: 32px 24px;
     position: absolute;
     top: 80px;
-    right: 10px;
+    right: 130px;
     width: 50%;
     border-radius: 24px;
 }
@@ -716,6 +717,7 @@ header img {
         /* max-width: 400px; */
     }
 
+
     .mobile-menu {
         display: none;
         padding-left: 20px;
@@ -733,7 +735,7 @@ header img {
 
     .menu-open {
         display: flex;
-        margin-right: 20px;
+        margin-right: 80px;
         transition: all .5s ease-in-out;
     }
 
@@ -912,6 +914,16 @@ header img {
   }
 
 }
+
+/* @media(max-width: 400px) {
+   .menu-open {
+    transform: translateX(-500px);
+   }
+   
+   header {
+
+   }
+} */
 
 /* Tablet Responsiveness */
 

@@ -54,12 +54,14 @@ ctaForm.addEventListener('submit', (e) => {
 
    if (ctaEmail === '') {
         document.querySelector('#ctaErrorMsg').textContent = "Email is required";
+        document.querySelector('.error-cta').style.left = "0";
    } else if (ctaEmail.includes('@') && ctaEmail.includes('.')) {
         document.querySelector('#ctaErrorMsg').textContent = "";
-
+         
         ctaForm.submit();
    } else {
         document.querySelector('#ctaErrorMsg').textContent = "Please enter a valid email address.";
+        document.querySelector('.error-cta').style.left = "-280px";
    }
       
 });
