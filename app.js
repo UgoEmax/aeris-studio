@@ -33,7 +33,7 @@ heroForm.addEventListener('submit', (e) => {
       return;
     } 
 
-    if (!formEmail.includes('@') && !formEmail.includes('.')) {
+    if (!formEmail.includes('@') || !formEmail.includes('.')) {
       errorMsg.textContent = "Please enter a valid email address.";
       return;
     }
