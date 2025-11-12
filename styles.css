@@ -723,9 +723,9 @@ header img {
         padding-left: 20px;
     }
 
-    .image {
-        max-width: 100%;
-        margin: 5px;
+    .image a{
+        transform: translateX(-30px);
+
     }
 
     
